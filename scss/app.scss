@@ -1,0 +1,99 @@
+@import 'variables';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.8rem;
+    font-family: $fontFamily;
+
+    position: relative;
+    max-width: 1440px;
+    margin: 0;
+    padding: 0;
+    background-color: $darkCyan;
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -680px left -700px, bottom -700px right -750px;
+
+    @include desktop{
+        background-position: top -520px left -71%, bottom -800px right -54%;
+    }
+}
+
+.contenedor{
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 15rem;
+    background-color: $white;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+
+    img:nth-child(1){
+        border-radius: 10px 10px 0 0;
+    }
+
+    img:nth-child(2){
+        width: 115px;
+        border-radius: 50%;
+        align-self: center;
+        transform: translateY(-50%);
+        border: 5px solid $white;
+    }
+}
+
+.main{
+    position: relative;
+    text-align: center;
+    color: $darkGrayishBlue;
+    h2{
+        width: 100%;
+        position: absolute;
+        transform: translateY(-180%);
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $veryDarkDesaturatedBlue;
+
+        span{
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+    }
+
+    border-bottom: 1px solid $darkGray;
+    
+    p{  
+        transform: translateY(-60%);
+        margin-bottom: 2rem;
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+    color: $veryDarkDesaturatedBlue;
+    font-size: 1.8rem;
+    text-align: center;
+    .item{
+
+        p{
+            font-size: 1rem;
+            color: $darkGray;
+            margin-bottom: 2rem;
+        }
+    }
+}

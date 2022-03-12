@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Kumbh Sans", sans-serif;
+  position: relative;
+  max-width: 1440px;
+  margin: 0;
+  padding: 0;
+  background-color: #19a2ae;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -680px left -700px, bottom -700px right -750px;
+}
+
+@media only screen and (min-width: 1044px) {
+  body {
+    background-position: top -520px left -71%, bottom -800px right -54%;
+  }
+}
+
+.contenedor {
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 15rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header img:nth-child(1) {
+  border-radius: 10px 10px 0 0;
+}
+
+.header img:nth-child(2) {
+  width: 115px;
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: 5px solid white;
+}
+
+.main {
+  position: relative;
+  text-align: center;
+  color: #6a6f81;
+  border-bottom: 1px solid #969696;
+}
+
+.main h2 {
+  width: 100%;
+  position: absolute;
+  -webkit-transform: translateY(-180%);
+          transform: translateY(-180%);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3248;
+}
+
+.main h2 span {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.main p {
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+  margin-bottom: 2rem;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 2.5rem;
+  color: #2d3248;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.footer .item p {
+  font-size: 1rem;
+  color: #969696;
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=app.css.map */
